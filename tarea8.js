@@ -29,8 +29,8 @@ async function fetchPokemons() {
       renderPokemons(pokemonDetails, container);        // Render de las tarjetas
 
   } catch (error) {
-      console.error("Error al obtener los datos de los Pokémon:", error.message);
-      container.innerHTML = `<p>Ocurrió un error al cargar los Pokémon. Intenta de nuevo.</p>`;
+      console.error("Error al obtener datos:", error.message);
+      container.innerHTML = `<p>Ocurrió un error al cargar los Pokémon. </p>`;
   }
 }
 
